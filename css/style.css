@@ -1,0 +1,392 @@
+html,body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Livvic', sans-serif;
+
+}
+
+
+
+
+/*------------Global classes------------*/
+
+img{
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(68, 66, 66, 0.816);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*при уменьшении экрана элементы не будут сливаться*/
+}
+
+ul{
+    list-style-type: none;
+}
+
+button.btn{
+    background: rgb(139, 232, 255);
+    padding: 0.8rem 1.8rem;
+    font-size: .8rem;
+    cursor: pointer;
+    transition: 1s;
+    outline: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0,0.2);
+    letter-spacing: 0.6px;
+    font-weight: bold;
+    color: rgba(68, 66, 66, 0.816);
+}
+
+.qlavni{
+    overflow: hidden;
+}
+
+/*-----X------Global classes-----X------*/
+
+
+/* Seperating of Columns */
+.container .site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-top: 2rem;
+
+}
+/*X Seperating of Columns X*/
+
+/* Other styles */
+
+.post-content{
+    width: 100%;
+}
+
+.container{
+    margin: 0 4rem;
+}
+
+.post-image, .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.container .post-info{
+    background-color: rgb(140, 178, 228);
+    padding: 1rem;
+    border-radius: 3rem;
+    position: absolute;
+    bottom: 0%;
+    left: 20vw;
+}
+
+.span{
+    margin: 0 0.5rem;
+}
+
+.paragraph{
+    width: 100%;
+}
+/*X Other styles X*/
+
+
+/* image transform */
+.scale{
+    display: inline-block; /* IMPORTANT */
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0,0.2);
+
+}
+
+.scale .img{
+    transition: 1s;
+    width: 100%;
+}
+
+.scale .img:hover{
+    transform: scale(1.2);
+}
+
+/*X image transform X*/
+
+/* Title styles */
+.post-title a{
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    color: rgb(94, 19, 19);
+}
+/*X Title styles X*/
+
+/* paginition */
+.pagination{
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.pagination a{
+    padding: 0.6rem 0.9rem;
+    border-radius: 2rem;
+    margin: 0 0.3rem;
+}
+
+.pagination .pages{
+    background-color: rgba(32, 28, 28, 0.603);
+    color: white;
+}
+/*X paginition X*/
+
+/* Category */
+.category h2{
+    padding-bottom: 1.5rem;
+}
+
+.category .list-items{
+    border-radius: 1rem;
+    background-color: rgb(105, 194, 216);
+    padding: 0.6rem;
+    margin: 0.4rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+/*X Category X*/
+
+/* Popular Post */
+.popular-post{
+    padding-top: 3rem;
+}
+
+.popular-post .post-content{
+    padding: 2rem 0;
+}
+
+.popular-post .post-info{
+    padding: .4rem .1rem!important;
+    bottom: 0rem!important;
+    left: 1.5rem!important;
+    border-radius: 0!important;
+    background: white!important;
+}
+
+.popular-post .post-title a{
+    font-size: 1rem;
+}
+/*X Popular Post X*/
+
+/* newsletter */
+.newsletter .form-element{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.newsletter .form-element .input-form{
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.384);
+}
+
+.newsletter .form-element .form-btn{
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+/*X newsletter X*/
+
+
+/* tags */
+.popular-tags{
+    padding: 4rem 0;
+}
+
+.popular-tags .tags .tag{
+    background-color: rgb(95, 235, 240);
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 3rem;
+}
+/*X tags X*/
+
+
+
+/* ----------------------------Footer------------------------------- */
+footer.footer{
+    background-color: rgba(12, 12, 12, 0.952);
+    position: relative;
+}
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns*  SIMILARLY --> grid-template-columns: 25% 25% 25% 25%; */
+}
+
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem 0.9rem;
+}
+
+footer.footer .container h2{
+    color: white;
+}
+
+footer.footer .container p{
+    color: rgba(255, 255, 255, 0.315);
+}
+
+
+
+.newsletter .input-icon{
+    background-color: black;
+    padding: 0.4rem 0.9rem;
+    border: none;
+    letter-spacing: 0.5px;
+    outline: none;
+    color: white;
+    width: 50%;
+    outline: none;
+}
+
+.newsletter .btn-icon{
+    padding: 0.6rem 0.8rem;
+    background: rgb(141, 193, 252);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+footer.footer .instagram img{
+   display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: 0.4rem;
+}
+
+footer.footer .follow .social{
+    color: white;
+}
+
+.social #yes{
+    padding: 0 0.4rem;
+    font-size: 1.1rem;
+}
+
+footer.footer .rights{
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.315);
+}
+
+footer.footer .rights a{
+    color: white;
+}
+
+.move-up{
+    position: absolute;
+    top: 50%;
+    right: 6%;
+}
+
+.move-up a{
+    color: rgba(245, 245, 245, 0.295);
+}
+
+.move-up a:hover{
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+
+/* ---------X------------------Footer-----------------------X------ */
+
+
+
+/* ----------------------------Media------------------------------ */
+
+@media only screen and (max-width:1100px){
+    main .posts .post-info{
+        border-radius: 0%;
+        left: 2rem;
+        bottom: 1rem;
+    }
+
+    aside .post-info{
+        display: none;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media only screen and (max-width:815px){
+    .container .site-content{
+        grid-template-columns: repeat(1,1fr);  /* or just 100% */
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .container{
+        margin: 0 1rem;
+    }
+
+    aside{
+        text-align: center;
+    }
+
+    aside .category .category-list{
+        justify-content: center;
+        padding: 1rem 0.1rem;
+    }
+
+}
+
+
+@media only screen and (max-width:617px){
+    .posts .post-info{
+        display: none;
+    }
+
+    footer.footer .container > div{
+        padding: 1rem 0.9rem;
+    }
+
+    .footer .rights{
+        padding: 1rem 4rem;
+        text-align: center;
+    }
+
+    aside .post-info{
+        display: initial;
+    }
+}
+
+
+@media only screen and (max-width:372px){
+
+    aside .post-info{
+        display: none;
+    }
+
+    .footer .rights{
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    aside .post-content{
+        padding: 0.3rem 0rem!important;
+        margin: 0!important;
+    }
+}
+
+
+
+
+/* ------X---------------------Media-----------------------X------ */
+
