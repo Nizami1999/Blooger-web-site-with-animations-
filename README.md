@@ -1,7 +1,7 @@
 
 
 # Blooger-web-site-with-animations-
-<h1>Some part of blooger web site with animations created by HTML CSS and JS (jQuery).
+<h1>Some part of blogger web site with animations created by HTML CSS and JS (jQuery).
 
 ![Screenshot_1](https://user-images.githubusercontent.com/61557989/77647906-aef4d780-6f80-11ea-835e-3823a2739cad.png)
 
